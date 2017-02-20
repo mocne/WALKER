@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		579E753DAFF88E5FBDDF7E70 /* Pods_walker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2069240ADFF2F78EC426E4 /* Pods_walker.framework */; };
 		8FDAF5931E559796001F1AE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAF5921E559796001F1AE2 /* main.m */; };
 		8FDAF5961E559796001F1AE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAF5951E559796001F1AE2 /* AppDelegate.m */; };
 		8FDAF59C1E559796001F1AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FDAF59A1E559796001F1AE2 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B407C88054199C6456CA1E9 /* Pods-walker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walker.release.xcconfig"; path = "Pods/Target Support Files/Pods-walker/Pods-walker.release.xcconfig"; sourceTree = "<group>"; };
+		5D2069240ADFF2F78EC426E4 /* Pods_walker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_walker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FDAF58E1E559796001F1AE2 /* walker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FDAF5921E559796001F1AE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8FDAF5941E559796001F1AE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		8FDAF5A21E559796001F1AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		8FDAF5AD1E5597F6001F1AE2 /* mainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainViewController.h; sourceTree = "<group>"; };
 		8FDAF5AE1E5597F6001F1AE2 /* mainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainViewController.m; sourceTree = "<group>"; };
+		B9C4C2CC457C6C4622D5DE4B /* Pods-walker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-walker/Pods-walker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579E753DAFF88E5FBDDF7E70 /* Pods_walker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		577E66750A5B6035DE0ECFD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D2069240ADFF2F78EC426E4 /* Pods_walker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FDAF5851E559796001F1AE2 = {
 			isa = PBXGroup;
 			children = (
 				8FDAF5901E559796001F1AE2 /* walker */,
 				8FDAF58F1E559796001F1AE2 /* Products */,
+				DE69ADFB55606230E031FF5C /* Pods */,
+				577E66750A5B6035DE0ECFD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +134,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DE69ADFB55606230E031FF5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9C4C2CC457C6C4622D5DE4B /* Pods-walker.debug.xcconfig */,
+				5B407C88054199C6456CA1E9 /* Pods-walker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FDAF5A51E559796001F1AE2 /* Build configuration list for PBXNativeTarget "walker" */;
 			buildPhases = (
+				68B2BAADF2634CE256708284 /* [CP] Check Pods Manifest.lock */,
 				8FDAF58A1E559796001F1AE2 /* Sources */,
 				8FDAF58B1E559796001F1AE2 /* Frameworks */,
 				8FDAF58C1E559796001F1AE2 /* Resources */,
+				31DD6912E97484554F8B0C4F /* [CP] Embed Pods Frameworks */,
+				B8DD6EE50BA890EA8EB3D7DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,6 +212,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31DD6912E97484554F8B0C4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-walker/Pods-walker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68B2BAADF2634CE256708284 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8DD6EE50BA890EA8EB3D7DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-walker/Pods-walker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8FDAF58A1E559796001F1AE2 /* Sources */ = {
@@ -311,10 +386,12 @@
 		};
 		8FDAF5A61E559796001F1AE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9C4C2CC457C6C4622D5DE4B /* Pods-walker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CAB83Q94X3;
 				INFOPLIST_FILE = walker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaifeng.walker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,10 +400,12 @@
 		};
 		8FDAF5A71E559796001F1AE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B407C88054199C6456CA1E9 /* Pods-walker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CAB83Q94X3;
 				INFOPLIST_FILE = walker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaifeng.walker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +431,7 @@
 				8FDAF5A71E559796001F1AE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

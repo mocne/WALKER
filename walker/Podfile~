@@ -1,0 +1,5 @@
+use_frameworks!
+platform :ios, ‘10.1‘
+target "baidu" do
+pod 'BaiduMapKit’,’2.10.2’ 
+end
